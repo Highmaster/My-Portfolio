@@ -2,7 +2,7 @@ body{
     display: flex;
     flex-direction: column;
     font-family: "Roboto", sans-serif;
-    background-color: #e0e0e0;
+    background-color:  #ffffff ;
 }
 nav{
     width: 100%;
@@ -26,7 +26,7 @@ li{
 }
 section{
     width: 100%;
-    background-color: #ffffff;
+    background-color: #f2e2f3;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,14 +56,19 @@ section{
 
 }
 .hero-info{
-   
     margin: 30px;
+    justify-content: center;
     max-width: 300px;
 }
 .hero-image{
     height: 300px;
     width: 300px;
     margin: 30px;
+}
+@media only screen and (max-width: 600px) {
+    .hero-info {
+        width: 700px;
+    } 
 }
 .styled-break{
     width: 30px;
@@ -83,7 +88,7 @@ section{
 .test{
     width: 30px;
     height: 30px;
-    background-color: rgb(76, 255, 11);
+    background-color: rgb(238, 175, 251);
     margin: 5px;
 }
 .button{
@@ -96,9 +101,7 @@ section{
     color: aliceblue;
     text-transform: uppercase;
     font-size: 12px;
-    text-align: center;
-
-   
+    text-align: center;  
 }
 .button:hover{
     background-color: rgb(255, 0, 0, 1);
@@ -107,11 +110,37 @@ section{
 .button:active{
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6)
 }
+.form{
+    margin:  0 0 40px 0;
+}
+.input-section{
+    margin: 20px 0;
+    display: flex;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px 0 0;
+}
+.fa{
+    margin: 10px;
+}
 footer{
     font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+    justify-content: center;
 }
+@media only screen and (min-width: 500px) {
+    footer{
+        background-color:rgba(126, 23, 175, 0.54);
+    }
+}
+    
 a{
     text-decoration: none;
+    color: black;
+}
+a:visited{
     color: black;
 }
 a:hover{
